@@ -11,9 +11,8 @@ class Game:
         pygame.display.set_caption('SUPER STAR QUEST')
         self.clock = pygame.time.Clock()
 
-        self.tmx_maps = {0: load_pygame(join('C:Users', 'i_chowdhury18', 'PycharmProjects', 'SUPER-STAR-QUEST', 'venv', 'Lib', 'site-packages',
-                                             'pytmx'))}
-        self.current_stage = Level(self.tmx_maps[0])
+        self.tmx_maps = {0: load_pygame(join('"C:\Users\Hasin\Videos\OneDrive\Pictures\Worlds\world_0_level_0.tmx"'))}
+        self.current_stage = Level1(self.tmx_maps[0])
 
     def run(self):
         while True:
